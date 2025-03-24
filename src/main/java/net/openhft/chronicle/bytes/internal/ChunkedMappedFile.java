@@ -113,7 +113,7 @@ public class ChunkedMappedFile extends MappedFile {
         ExceptionHandler debug = Jvm.debug().defaultHandler();
 
         try {
-            Jvm.setExceptionHandlers(error, null, null);
+            Jvm.setExceptionHandlers(error, null, null, null);
 
             final Path path = Files.createTempDirectory("warmup");
 
